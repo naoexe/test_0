@@ -1,0 +1,361 @@
+@charset_01 "UTF-8";
+
+body {margin:0;
+	  font-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif;}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----共通クラス設定----*/
+
+.hide {display:none}
+
+a {text-decoration:none;}
+
+.hide {display:none}
+
+.relative {position:relative;}
+.fixed {position:fixed;}
+
+.hold_x {overflow-x:hidden;}
+.hold_y {overflow-y:hidden;}
+
+[class*="area"] {padding-right:64px; padding-left:64px;}
+
+[class*="fc_f0"] {font-family:'Lucida Console',monospace;}
+[class*="fc_f1"] {font-family:'Monotype Corsiva',fantasy;}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*-----------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------≪マウスカーソル変更≫---------------------------------------------*/
+/*----カーソルをリンク調に変更----*/
+
+.hb1_sheet_1, .gm_button_on, .gm_button_off, .sb_left, .sb_right,
+.site_nav li, .fotter_box li
+{cursor:pointer;}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪サイト背景≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*----サイト背景----*/
+
+.site_back_image {
+
+    width:1366x; height:700px;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    background-image: url(../images/world_map_0.png);
+    position:fixed;
+    
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪トップページ・共通コンテンツ≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*----サイトナビゲーション設定----*/
+
+.site_nav {
+    
+    width:100%; height:80px;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    padding-right:64px; padding-left:64px;
+    background-color:#fefefe; opacity:0.9;
+    box-shadow: 0px 10px 3px -3px rgba(3,1,2,0.8);
+    z-index:100;
+    
+}
+
+.site_nav:after {content:""; display:block; clear:both;}
+.site_nav ul:after {content:""; display:block; clear:both;}
+
+.sn_left {
+    
+    float:left; width:20%; height:100%;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    
+}
+
+.sn_center {
+    
+    float:left; width:25%; height:80%;
+    margin-top:3px; margin-bottom:0; margin-right:auto; margin-left:auto;
+    
+}
+
+.sn_right {
+    
+    float:left; width:35%; height:100%;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----"sn_left"----*/
+
+.sn_left_1 {
+    
+    float:left; width:20%; height:100%;
+    
+}
+
+.sn_left_1 {
+    
+    margin-top:2.5%; margin-bottom:0; margin-right:auto; margin-left:2%; 
+}
+
+.sn_left_2 {
+    
+    float:left; width:76%; height:100%;
+    margin-top:4%; margin-bottom:0; margin-right:auto; margin-left:0;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----"sn_center"----*/
+
+.sn_center_1 {
+    
+    float:left; width:192px; height:100%;
+    padding-top:10px; padding-bottom:10px;
+    border:solid 1px #aaaaaa;
+    font-size:12px; text-align:center;
+    
+}
+
+.sn_center_2 {
+    
+    float:left; width:98px; height:100%;
+    padding-top:10px; padding-bottom:10px;
+    border:solid 1px #aaaaaa;
+    font-size:12px; text-align:center;
+    
+}
+
+.sn_center_3 {
+    
+    float:left; width:52px; height:100%;
+    padding-top:10px; padding-bottom:10px;
+    border:solid 1px #aaaaaa;
+    background-color:#ee1155; 
+    font-size:12px; color:#fefefe; text-align:center;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----"sn_right"----*/
+
+.sn_right_1 {
+    
+    float:left; width:25%; height:64px;
+    margin-left:15px;
+    padding-top:14px;
+    font-size:14px; text-align:center;
+    
+}
+
+.sn_right_2 {
+    
+    float:left; width:30%; height:64px;
+    margin-left:10px;
+    padding-top:14px;
+    font-size:14px; text-align:center;
+    
+}
+
+.sn_right_3 {
+    
+    float:left; width:20%; height:64px;
+    margin-left:10px;
+    padding-top:14px;
+    font-size:14px; text-align:center;
+    
+}
+
+.sn_right_4 {
+    
+    float:left; width:5%; height:64px;
+    margin-left:10px;
+    padding-top:14px;
+    font-size:14px; text-align:center;
+    
+}
+
+.sn_right_5 {
+    
+    float:left; width:5%; height:64px;
+    margin-left:5px;
+    padding-top:14px;
+    font-size:14px; text-align:center;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪サイトヘッダーエリア設定≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----ヘッダーエリアスライダー設定----*/
+
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----サイトフッターエリア設定----*/
+
+.fotter_box {
+    
+    width:1366px; height:95px;
+    padding-top:15px;
+    background-color:#77c9ee;
+    /*--background-image: url(../images/html_bg_03.jpg);--*/
+    color:#ffffff; text-align:center;
+    position:relative;
+    
+}
+
+[class*="fotter_list"]:after {content:""; display:block; clear:both;}
+
+.fotter_list_1 {
+    
+    width:60%;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    font-size:14px; line-height:25px;
+    
+}
+
+.fotter_list_1 li {
+    
+    float:left;
+    width:25%;
+    position:relative;
+    
+}
+
+.fotter_list_2 {
+    
+    width:30%;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    font-size:14px; line-height:25px;
+    
+}
+
+.fotter_list_2 li {
+    
+    float:left;
+    width:50%;
+    position:relative;
+}
+
+.fotter_list_3 {
+    
+    width:25%;
+    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
+    font-size:14px; line-height:25px;
+    
+}
+
+.fotter_list_3 li {
+    
+    float:left;
+    width:50%;
+    position:relative;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----コピーライト----*/
+
+.copyright_box {
+    
+    width:1366px; height:32px;
+    padding-top:14px;
+    background-color:#aaaaaa;
+    font-size:12px; color:#010101;
+    position:relative;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=↓≪ページレイアウト関連≫↓=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『599px以下』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+@media(max-width:599px)
+{
+
+/*----全体の横幅を固定----*/
+
+body
+{width:480px; margin-left:auto; margin-right:auto;}
+    
+}
+
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『600px以上』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+@media(min-width:600px)
+{
+    
+/*----全体の横幅を固定----*/
+
+body
+{width:540px; margin-left:auto; margin-right:auto;}
+
+}
+
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『600px以上～767px以下』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=*/
+@media(min-width:600px) and (max-width:767px)
+{
+
+
+/*----全体の横幅を固定----*/
+
+body
+{width:640px; margin-left:auto; margin-right:auto;}
+    
+}
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『768px以上』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+@media(min-width:768px)
+{
+
+
+    
+/*----全体の横幅を固定----*/
+    
+body
+{width:900px; margin-left:auto; margin-right:auto;}
+
+}
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『1190px以上』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+@media(min-width:1190px)
+{
+
+
+    
+/*----全体の横幅を固定----*/
+    
+body
+{width:1190px; margin-left:auto; margin-right:auto;}
+
+}
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『1280px以上』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=*/
+@media(min-width:1280px)
+{
+    
+/*----全体の横幅を固定----*/
+    
+body
+{width:1280px; margin-left:auto; margin-right:auto;}
+
+}
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪アニメーション等々≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
