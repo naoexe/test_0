@@ -13,7 +13,9 @@ a {text-decoration:none;}
 .hide {display:none}
 
 .relative {position:relative;}
-.fixed {position:fixed;}
+.absolute {position:absolute;}
+.static   {position:static;}
+.fixed    {position:fixed;}
 
 .hold_x {overflow-x:hidden;}
 .hold_y {overflow-y:hidden;}
@@ -71,97 +73,153 @@ a {text-decoration:none;}
     width:100%; height:80px;
     margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     background-color:#fefefe; opacity:0.9;
-    box-shadow: 0px 10px 3px -3px rgba(3,1,2,0.8);
+    box-shadow: 0px 6px 3px -3px rgba(3,1,2,0.8);
     z-index:100;
     
 }
 
 .site_nav:after {content:""; display:block; clear:both;}
-.site_nav ul:after {content:""; display:block; clear:both;}
+.site_nav_box:after {content:""; display:block; clear:both;}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----サイトナビゲーション【サイトロゴ・タイトル】----*/
 
 .sn_left {
     
-    float:left; width:20%; height:100%;
+    float:left; width:40%; height:100%;
     margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     
 }
 
+/*----"sn_left"----*/
+
+.site_logo {
+    
+    float:left; width:80px; height:80px;
+    background:url(../images/eastasia%20engineering_logo_0.png);
+    position:relative;
+    
+    
+}
+
+.site_title {
+    
+    float:left; width:75%; height:100%;
+    padding-left:8px;
+    position:relative;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----サイトナビゲーション【メニュー】----*/
+
 .sn_center {
     
-    float:left; width:25%; height:80%;
+    float:left; width:45%; height:80%;
     margin-top:3px; margin-bottom:0; margin-right:auto; margin-left:auto;
     
 }
 
+.sn_center:after {content:""; display:block; clear:both;}
+
+/*----"sn_center"----*/
+
+[class*="sn_center_1"],[class*="sn_center_3"],[class*="sn_center_4"]
+{
+
+    float:left; width:25%;
+    text-align:center;
+    position:relative;
+    
+}
+
+.sn_center_2_0 {
+    
+    float:left; width:25%;
+    text-align:center;
+    position:relative;
+    
+}
+
+/*----アコーディオンメニュー----*/
+
+.sn_center_2_list {
+    
+    overflow:hidden;
+    
+}
+
+.snc2_li_0 {
+    
+    width:8px; height:8px;
+    margin-top:2px; margin-bottom:0; margin-right:auto; margin-left:60px;
+    background-color:#55aaff;
+    
+    transform:rotate(45deg);
+    
+    z-index:102; position:absolute;
+    
+}
+
+.snc2_li_1 {
+    
+    width:218px; height:auto;
+    margin-top:5px; margin-bottom:0; margin-right:auto; margin-left:-60px;
+    padding-right:16px; padding-left:16px;
+    background-color:#ffffff;
+    
+    border-top:solid 4px #55aaff; border-bottom:solid 2px #55aaff;
+    border-right:solid 1px #99eeff; border-left:solid 1px #99eeff;
+    
+    box-shadow: 0px 8px 3px -3px rgba(3,1,2,0.8);
+    
+    text-align:left;
+    z-index:103; position:absolute;
+    
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*----サイトナビゲーション【言語切り替え】----*/
+
 .sn_right {
     
-    float:left; width:35%; height:100%;
+    float:left; width:15%; height:100%;
     margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     
 }
 
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
-/*----"sn_left"----*/
-
-.sn_left_1 {
-    
-    float:left; width:20%; height:100%;
-    
-}
-
-.sn_left_1 {
-    
-    margin-top:2.5%; margin-bottom:0; margin-right:auto; margin-left:2%; 
-}
-
-.sn_left_2 {
-    
-    float:left; width:76%; height:100%;
-    margin-top:4%; margin-bottom:0; margin-right:auto; margin-left:0;
-    
-}
-
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
-/*----"sn_center"----*/
-
-
-
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*----"sn_right"----*/
 
 .sn_right_1 {
     
-    float:left; width:25%; height:64px;
+    float:left; width:33.333333%; height:64px;
     
 }
 
 .sn_right_2 {
     
-    float:left; width:30%; height:64px;
+    float:left; width:33.333333%; height:64px;
     
 }
 
 .sn_right_3 {
     
-    float:left; width:20%; height:64px;
+    float:left; width:33.333333%; height:64px;
 
-}
-
-.sn_right_4 {
-    
-    float:left; width:5%; height:64px;
-    
-}
-
-.sn_right_5 {
-    
-    float:left; width:5%; height:64px;
-    
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪ヘッダーエリア設定≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*----ヘッダーイメージ----*/
+
+.header_space {
+    
+    width:100%; height:80px;
+    opacity:0;
+    
+}
+
 .header_area p {
     
     margin-top:20%; margin-left:45%;

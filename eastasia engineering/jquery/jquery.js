@@ -3,9 +3,22 @@
 $(function(){
     
     $("body").addClass("hold_x");
+    $(".site_nav").addClass("absolute");
+    
+    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
     
     $("[class*='lang_b']").addClass("hide");
     $("[class*='lang_c']").addClass("hide");
+    
+    $("[class*='sn_center_2_0'] p").hover(function(){
+        
+        $(".sn_center_2_list").css({"opacity":"1","z-index":"101"});
+        
+    },function(){
+        
+        $(".sn_center_2_list").css({"opacity":"0","z-index":"1"});
+        
+    });
     
     //------------------------------------------------------------------------------------------------------//
     //----言語切り替え【日本語】----//
@@ -45,11 +58,12 @@ $(function(){
     
     $(window).on('scroll', function() {
         
-        //----メニューバー固定化----//
-        
-        if ($(this).scrollTop() > 80) {
+        if ($(this).scrollTop() > 90) {
             
+            //----メニューバー固定化----//
             $(".site_nav").addClass("fixed");
+            
+            //----ヘッダー画像ぼかし----//
             $(".header_area").css({
                 "-webkit-filter":"blur(5px)","-ms-filter":"blur(5px)",
                 "filter":"blur(5px)"
@@ -58,7 +72,10 @@ $(function(){
             
         } else {
             
+            //----メニューバー固定化【解除】----//
             $(".site_nav").removeClass("fixed");
+            
+            //----ヘッダー画像ぼかし【解除】----//
             $(".header_area").css({
                 "-webkit-filter":"blur(0)","-ms-filter":"blur(0)",
                 "filter":"blur(0)"
@@ -71,6 +88,7 @@ $(function(){
         
         if ($(this).scrollTop() > 900) {
             
+            //----背景画像ぼかし----//
             $(".back_zone").css({
                 "-webkit-filter":"blur(5px)","-ms-filter":"blur(5px)",
                 "filter":"blur(5px)"
@@ -79,6 +97,7 @@ $(function(){
             
         } else {
             
+            //----背景画像ぼかし【解除】----//
             $(".back_zone").css({
                 "-webkit-filter":"blur(0)","-ms-filter":"blur(0)",
                 "filter":"blur(0)"
