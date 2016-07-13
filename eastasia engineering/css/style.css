@@ -144,9 +144,15 @@ a {text-decoration:none;}
 
 /*----アコーディオンメニュー----*/
 
+[class*="sn_center_2_0"] p {
+    
+    z-index:101;
+    
+}
+
 .sn_center_2_list {
     
-    overflow:hidden;
+    width:220px; height:auto;
     
 }
 
@@ -155,7 +161,6 @@ a {text-decoration:none;}
     width:8px; height:8px;
     margin-top:2px; margin-bottom:0; margin-right:auto; margin-left:60px;
     background-color:#55aaff;
-    
     transform:rotate(45deg);
     
     z-index:102; position:absolute;
@@ -167,16 +172,24 @@ a {text-decoration:none;}
     width:218px; height:auto;
     margin-top:5px; margin-bottom:0; margin-right:auto; margin-left:-60px;
     padding-right:16px; padding-left:16px;
+    
     background-color:#ffffff;
-    
-    border-top:solid 4px #55aaff; border-bottom:solid 2px #55aaff;
-    border-right:solid 1px #99eeff; border-left:solid 1px #99eeff;
-    
+    border-top:solid 5px #55aaff; border-bottom:solid 3px #55aaff;
+    border-right:solid 1px #aaeeff; border-left:solid 1px #aaeeff;
     box-shadow: 0px 8px 3px -3px rgba(3,1,2,0.8);
     
     text-align:left;
-    z-index:103; position:absolute;
+    z-index:103; position:absolute; overflow:hidden;
+
+}
+
+.snc2_li_1.on li {
     
+    animation-name:list_on;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:0.4s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:1;	/*--←アニメーションの再生回数を指定--*/
+
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -233,6 +246,7 @@ a {text-decoration:none;}
     width:100%; max-width:100%; height:0;
     padding-top:39.53147877013177%;
     background-image:url(../images/main_image_1.jpg);
+    background-color:#000000;
     background-size:contain;
     
 }
@@ -249,6 +263,25 @@ a {text-decoration:none;}
     background-color:#ffffff;
     
 }
+
+/*----スライダー a 設定----*/
+
+slider_a_list:after {content:""; display:block; clear:both;}
+
+[class*="sl_li"] {
+    
+    float:left;
+    width:210px; height:90px;
+    pa
+
+}
+
+.sl_li_1 {background-image:url(../images/slider_a/maker_logo_1.jpg);}
+.sl_li_2 {background-image:url(../images/slider_a/maker_logo_2.jpg);}
+.sl_li_3 {background-image:url(../images/slider_a/maker_logo_3.jpg);}
+.sl_li_4 {background-image:url(../images/slider_a/maker_logo_4.jpg);}
+.sl_li_5 {background-image:url(../images/slider_a/maker_logo_5.jpg);}
+.sl_li_6 {background-image:url(../images/slider_a/maker_logo_6.jpg);}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪インナー 2 エリア設定≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -313,6 +346,8 @@ a {text-decoration:none;}
     
 }
 
+.copyright_box p {text-align:right; position:absolute;}
+
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
 /*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=↓≪ページレイアウト関連≫↓=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=*/
@@ -345,6 +380,12 @@ a {text-decoration:none;}
     padding:0.9%;
     
 }
+    
+[class*="news_li"]:after {content:""; display:block; clear:both;}
+    
+[class*="nl_date"] {float:left; width:20%; text-align:center; position:relative;}
+    
+[class*="nl_category"] {float:left; width:20%; text-align:center; position:relative;}
 
 [class*="fl0_li_1"],[class*="fl0_li_3"]
 {border-right:solid 1px #cecece;}
@@ -373,7 +414,14 @@ a {text-decoration:none;}
     margin:0; padding:0.9%;
     
 }
+
+[class*="news_li"]:after {content:""; display:block; clear:both;}
     
+[class*="nl_date"] {float:left; width:15%; text-align:center; position:relative;}
+    
+[class*="nl_category"] {float:left; width:10%; text-align:center; position:relative;}
+    
+
 [class*="fl0_li_1"],[class*="fl0_li_2"],[class*="fl0_li_3"],[class*="fl0_li_4"]
 {border-right:solid 1px #cecece;}
     
@@ -383,5 +431,14 @@ a {text-decoration:none;}
 }
 /*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪アニメーション等々≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes list_on
+{
 
+  0% {margin-top:-20%;}
+    
+ 50% {margin-top:-10%;}
+    
+100% {margin-top:0%;}
+
+}   /*--↑@keyframes--*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/

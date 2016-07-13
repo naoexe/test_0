@@ -5,18 +5,23 @@ $(function(){
     $("body").addClass("hold_x");
     $(".site_nav").addClass("absolute");
     
-    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
-    
     $("[class*='lang_b']").addClass("hide");
     $("[class*='lang_c']").addClass("hide");
     
+    //------------------------------------------------------------------------------------------------------//
+    //----メニューバーのリアクション----//
+    
+    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
+    
     $("[class*='sn_center_2_0'] p").hover(function(){
         
-        $(".sn_center_2_list").css({"opacity":"1","z-index":"101"});
+        $(".snc2_li_1").addClass("on");
+        $(".sn_center_2_list").css({"opacity":"1","z-index":"100"},1000);
         
     },function(){
         
-        $(".sn_center_2_list").css({"opacity":"0","z-index":"1"});
+        $(".snc2_li_1").removeClass("on");
+        $(".sn_center_2_list").css({"opacity":"0","z-index":"1"},1000);
         
     });
     
@@ -54,7 +59,7 @@ $(function(){
     });
     
     //------------------------------------------------------------------------------------------------------//
-    //----スクロールによるサイトアクション----//
+    //----スクロールによるサイトリアクション----//
     
     $(window).on('scroll', function() {
         
