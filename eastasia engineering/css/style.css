@@ -24,14 +24,18 @@ a {text-decoration:none;}
 
 [class*="fc_f0"] {font-family:'Lucida Console',monospace;}
 [class*="fc_f1"] {font-family:'Monotype Corsiva',fantasy;}
+[class*="fc_f2"] {font-family:'Century Gothic',sans-serif;}
+[class*="fc_f3"] {font-family:'Franklin Gothic Medium',sans-serif;}
+[class*="fc_f4"] {font-family:'ＭＳ 明朝',monospace;}
+[class*="fc_f5"] {font-family:'Bookman Old Style',serif;}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*-----------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------≪マウスカーソル変更≫---------------------------------------------*/
 /*----カーソルをリンク調に変更----*/
 
-.hb1_sheet_1, .gm_button_on, .gm_button_off, .sb_left, .sb_right,
-.site_nav li, .fotter_box li
+[class*="sn_center_2"],[class*="sn_center_3"],[class*="sn_center_4"], .site_nav li, .sn_right div,
+[class*="slide_button"], .fotter_box li
 {cursor:pointer;}
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -48,7 +52,6 @@ a {text-decoration:none;}
 .back_image_0 {
 
     width:1366px; height:700px;
-    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     background:url(../images/world_map_0.png) no-repeat;
     z-index:2; position:absolute;
     
@@ -57,9 +60,8 @@ a {text-decoration:none;}
 .back_image_1 {
 
     width:1366px; height:700px;
-    margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     background:url(../images/01l.jpg) no-repeat;
-    z-index:1; position:relative;
+    z-index:1; position:absolute;
     
 }
 
@@ -72,7 +74,7 @@ a {text-decoration:none;}
     
     width:100%; height:80px;
     margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
-    background-color:#fefefe; opacity:0.9;
+    background-color:#fefefe; opacity:0.95;
     box-shadow: 0px 6px 3px -3px rgba(3,1,2,0.8);
     z-index:100;
     
@@ -86,7 +88,7 @@ a {text-decoration:none;}
 
 .sn_left {
     
-    float:left; width:40%; height:100%;
+    float:left; width:28%; height:100%;
     margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     
 }
@@ -95,18 +97,36 @@ a {text-decoration:none;}
 
 .site_logo {
     
-    float:left; width:80px; height:80px;
-    background:url(../images/eastasia%20engineering_logo_0.png);
+    float:left;
+    background:url(../images/eastasia%20engineering_logo_0.png); background-size:cover;
     position:relative;
     
     
 }
 
-.site_title {
+.site_title_0 {
     
-    float:left; width:75%; height:100%;
+    float:left; width:220px; height:100%;
     padding-left:8px;
     position:relative;
+    
+}
+
+[class*="site_title_1"] {
+    
+    width:220px;
+    margin-top:16px;
+    padding-bottom:4px;
+    border-bottom:double 3px #55aaff;
+    font-size:18px; text-align:center; letter-spacing:1px;
+    
+}
+
+[class*="site_title_2"] {
+    
+    width:220px;
+    margin-top:4px;
+    font-size:13px; text-align:center; letter-spacing:-1px;
     
 }
 
@@ -142,45 +162,54 @@ a {text-decoration:none;}
     
 }
 
+[class*="sn_center_1"] {color:#55aaff;}
+[class*="sn_center_2"] {color:#555555;}
+[class*="sn_center_3"] {color:#555555;}
+[class*="sn_center_4"] {color:#555555;}
+
 /*----アコーディオンメニュー----*/
 
-[class*="sn_center_2_0"] p {
-    
-    z-index:101;
-    
-}
+[class*="sn_center_2_0"] p {z-index:110;}
 
-.sn_center_2_list {
-    
-    width:220px; height:auto;
-    
-}
+.sn_center_2_list {width:220px; height:auto;}
 
 .snc2_li_0 {
     
-    width:8px; height:8px;
-    margin-top:2px; margin-bottom:0; margin-right:auto; margin-left:60px;
+    width:7px; height:7px;
+    margin-top:1.25px; margin-bottom:0; margin-right:auto; margin-left:50px;
     background-color:#55aaff;
     transform:rotate(45deg);
     
-    z-index:102; position:absolute;
+    z-index:100; position:absolute;
     
 }
 
 .snc2_li_1 {
     
-    width:218px; height:auto;
-    margin-top:5px; margin-bottom:0; margin-right:auto; margin-left:-60px;
-    padding-right:16px; padding-left:16px;
+    width:234px; height:auto;
+    margin-top:5px; margin-bottom:0; margin-right:auto; margin-left:-70px;
+    padding-right:8px; padding-left:8px;
     
     background-color:#ffffff;
     border-top:solid 5px #55aaff; border-bottom:solid 3px #55aaff;
     border-right:solid 1px #aaeeff; border-left:solid 1px #aaeeff;
     box-shadow: 0px 8px 3px -3px rgba(3,1,2,0.8);
     
-    text-align:left;
-    z-index:103; position:absolute; overflow:hidden;
+    font-size:14px; text-align:left;
+    z-index:101; position:absolute; overflow:hidden;
 
+}
+.snc2_li_1 li {
+    
+    padding-right:8px; padding-left:8px;
+    line-height:40px;
+    
+}
+
+[class*="snc2_menu_1"],[class*="snc2_menu_2"],[class*="snc2_menu_3"] {
+    
+    border-bottom:solid 1px #aaaaaa;
+    
 }
 
 .snc2_li_1.on li {
@@ -192,35 +221,34 @@ a {text-decoration:none;}
 
 }
 
+.snc2_li_1 li:hover {
+    
+    font-size:15px; color:#ee9955;
+    box-shadow: 0 -6px 5px -3px rgba(50,50,50,0.5), 0 6px 5px -3px rgba(0,0,0,0.5);
+    
+}
+
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*----サイトナビゲーション【言語切り替え】----*/
 
 .sn_right {
     
-    float:left; width:15%; height:100%;
+    float:left; width:10%; height:100%;
     margin-top:0; margin-bottom:0; margin-right:auto; margin-left:auto;
     
 }
 
-/*----"sn_right"----*/
+/*----各言語切り替えボタン----*/
 
-.sn_right_1 {
+[class*="sn_lang"] {
     
-    float:left; width:33.333333%; height:64px;
+    float:left;
+    width:33.333333%; height:100%;
+    color:#555555; text-align:center;
     
 }
 
-.sn_right_2 {
-    
-    float:left; width:33.333333%; height:64px;
-    
-}
-
-.sn_right_3 {
-    
-    float:left; width:33.333333%; height:64px;
-
-}
+[class*="select"] {background-color:#55aaff; color:#ffffff;}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪ヘッダーエリア設定≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -270,7 +298,7 @@ a {text-decoration:none;}
     padding-top:32px;
     
     border-bottom:double 3px #55aaff;
-    font-size:24px; color:#555555;
+    font-size:24px; color:#555555; letter-spacing:2px;
     
 }
 
@@ -285,6 +313,24 @@ a {text-decoration:none;}
 .slider_a_list_1 {position:absolute;}
 
 .slider_a_list_1:after {content:""; display:block; clear:both;}
+
+.slide_button_left b {
+    
+    display:block;
+    margin-top:20px;
+    padding-top:4px; padding-right:14px;
+    transform:scale(0.9,1.4);
+    
+}
+
+.slide_button_right b {
+    
+    display:block;
+    margin-top:20px;
+    padding-top:4px; padding-left:14px;
+    transform:scale(0.9,1.4);
+
+}
 
 [class*="sla_li"] {float:left; position:relative;}
 
@@ -310,11 +356,10 @@ a {text-decoration:none;}
 
 [class*="news_title"] {
     
-    margin-right:32px; margin-left:32px;
     padding-top:32px;
     
     border-bottom:double 3px #55aaff;
-    font-size:24px; color:#555555;
+    font-size:24px; color:#555555; letter-spacing:2px;
     
 }
 
@@ -322,98 +367,149 @@ a {text-decoration:none;}
     
     background-color:#55aaff;
     color:#ffffff;
+    
 }
 
 [class*="nl_category_2"] {
     
     background-color:#dd7733;
     color:#ffffff;
+    
 }
 
 [class*="nl_category_3"] {
     
     background-color:#dd7733;
     color:#ffffff;
+    
 }
+
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪インナー 3 エリア設定≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*----インナー 3 エリア----*/
 
-.inner_3_area {
+.inner_3_area {width:auto; height:360px;}
 
-    width:auto; height:360px;
-    margin-top:70px; margin-bottom:90px;
-    
-}
+.inner_3_area:after {content:""; display:block; clear:both;}
 
 /*----スライダー b 設定----*/
 
-.slider_b_list_1 {
+[class*="slider_b_list"] {
     
     float:left;
-    width:1366px; height:360px;
-    
-    position:absolute;
+    width:2732px; height:50%;
+    background-color:#000000;
+    position:relative; overflow:hidden;
 
 }
 
-.slider_b_list_1:after {content:""; display:block; clear:both;}
+[class*="slider_b_list"]:after {content:""; display:block; clear:both;}
+
+.slider_b_list_1 {
+    
+    animation-name:slide_left;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:40s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:infinite;	/*--←アニメーションの再生回数を指定--*/
+    
+}
+
+.slider_b_list_2 {
+    
+    animation-name:slide_right;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:40s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:infinite;	/*--←アニメーションの再生回数を指定--*/
+
+}
 
 [class*="slb_li"] {
     
-    float:left;
-    width:20%; height:50%;
+    float:left; display:block;
+    width:273.2px; height:100%;
     position:relative;
 
 }
 
-.slb_li_1 {background:url(../images/slider_b/si_b_1.jpg) no-repeat;}
-.slb_li_2 {background:url(../images/slider_b/si_b_2.jpg) no-repeat;}
-.slb_li_3 {background:url(../images/slider_b/si_b_3.jpg) no-repeat;}
-.slb_li_4 {background:url(../images/slider_b/si_b_4.jpg) no-repeat;}
-.slb_li_5 {background:url(../images/slider_b/si_b_5.jpg) no-repeat;}
-.slb_li_6 {background:url(../images/slider_b/si_b_6.jpg) no-repeat;}
+[class*="slb_li"] p {
+    
+    opacity:0;
+    width:100%; height:100%;
+    position:absolute;
+    
+}
 
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+[class*="slb_li"] p:hover {
+    
+    opacity:1;
+    width:85%; height:77.5%;
+    margin:2.5%;
+    padding:5%;
+    background:rgba(10,10,10,0.7);
+    color:#ffffff; text-align:center;
+    
+    animation-name:opacity_1;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:0.3s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:1;	/*--←アニメーションの再生回数を指定--*/
+    
+}
 
+.slb_li_1 {background:url(../images/slider_b/si_b_1.jpg) no-repeat; background-size:cover;}
+.slb_li_2 {background:url(../images/slider_b/si_b_2.jpg) no-repeat; background-size:cover;}
+.slb_li_3 {background:url(../images/slider_b/si_b_3.jpg) no-repeat; background-size:cover;}
+.slb_li_4 {background:url(../images/slider_b/si_b_4.jpg) no-repeat; background-size:cover;}
+.slb_li_5 {background:url(../images/slider_b/si_b_5.jpg) no-repeat; background-size:cover;}
+.slb_li_6 {background:url(../images/slider_b/si_b_6.jpg) no-repeat; background-size:cover;}
+.slb_li_7 {background:url(../images/slider_b/si_b_7.jpg) no-repeat; background-size:cover;}
+.slb_li_8 {background:url(../images/slider_b/si_b_8.jpg) no-repeat; background-size:cover;}
+.slb_li_9 {background:url(../images/slider_b/si_b_9.jpg) no-repeat; background-size:cover;}
+.slb_li_10 {background:url(../images/slider_b/si_b_10.jpg) no-repeat; background-size:cover;}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪フッターエリア設定≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*----フッターエリア----*/
 
-.fotter_box {
-    
-    background-color:#444444;
+.fotter_box {background-color:#444444;}
+
+.fotter_box p {color:#fefefe; letter-spacing:2px;}
+
+[class*="fb_logo_1"] 
+{
+    width:230px;
+    border-bottom:solid 1px #ffffff;
+    font-size:24px; text-align:center;
     
 }
 
-.fotter_box p {
-
-    color:#fefefe;
+[class*="fb_logo_2"] {
+    
+    width:230px;
+    padding-top:4px;
+    font-size:14px; text-align:center;
     
 }
 
-.fotter_list_0 li {
-    
-    color:#cecece;
-    
-}
+[class*="fl0_li"] p {font-size:18px;}
+
+.fotter_list_0 li {font-size:14px; color:#cecece; line-height:32px; letter-spacing:1px;}
+
+.fotter_list_0 li:hover {color:#ffee55;}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*----コピーライト----*/
 
 .copyright_box {
     
-    width:1366px; height:32px;
+    height:32px;
     padding-right:64px; padding-left:64px;
     background-color:#aaaaaa;
-    font-size:12px; color:#010101;
+    font-size:11px; color:#010101;
     position:relative;
     
 }
 
-.copyright_box p {text-align:right; position:absolute;}
+.copyright_box p {padding-top:8px;}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**//**/
@@ -421,7 +517,49 @@ a {text-decoration:none;}
 /*=#=#=#=↓≪ブラウザ画面の横幅が『599px以下』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
 @media(max-width:599px)
 {
+
+.site_nav　{height:100px;}
     
+.sn_left {width:100%;}
+
+.site_title_0 {transform:scale(0.8,0.8);}
+    
+.site_logo {width:40px; height:40px; margin-top:5px;}
+    
+.site_title_0 {
+    
+    height:50%;
+    margin-top:-15px; margin-left:-20px;
+    padding-left:0;
+    position:relative;
+    
+}
+
+.sn_center {
+    
+    width:65%;
+    margin-top:5px;
+    font-size:14px;
+    
+}
+
+.sn_right {
+    
+    width:35%;
+    margin-top:-45px;
+    padding-top:8px; padding-bottom:8px;
+    font-size:10px;
+    
+}
+    
+[class*="sn_lang"] {
+    
+    float:left;
+    width:33.333333%; height:100%;
+    text-align:center;
+    
+}
+
 .inner_1_area {
 
     width:auto; height:380px;
@@ -434,19 +572,55 @@ a {text-decoration:none;}
 .slider_a_list_0 {
     
     width:90%; height:270px;
-    margin-right:5%; margin-left:5%;
+    padding-right:5%; padding-left:5%;
     
     position:relative; overflow:visible;
 
 }
     
-.slider_a_list_1 {width:100%; height:270px;}
+.slider_a_list_1 {width:100%; height:270px; margin-left:0;}
     
-[class*="sla_li"] {
+[class*="sla_li"] {width:50%; height:90px;}
     
-    width:50%; height:90px;
+.inner_3_area {margin-top:20px; margin-bottom:30px;}
+    
+[class*="fl0_in_list"] {margin-right:16px; margin-left:16px;}
+    
+.copyright_box p {text-align:center;}
+    
+[class*="news_li"] {margin-top:16px;}
+
+[class*="news_li"]:after {content:""; display:block; clear:both;}
+    
+[class*="nl_date"] {
+    
+    float:left;
+    width:25%;
+    text-align:center;
+    position:relative;
+
+}
+    
+[class*="nl_category"] {
+    
+    float:left;
+    width:25%;
+    font-size:13px;text-align:center;
+    position:relative;
     
 }
+    
+[class*="nl_news"] {
+    
+    float:left;
+    width:95%; margin-left:5%;
+    font-size:14px; text-align:left; line-height:32px;
+    position:relative;
+    
+}
+    
+[class*="fb_logo_1"] {padding-top:18px;}
+[class*="fb_logo_2"] {padding-bottom:18px;}
     
 /*----全体の横幅を固定----*/
 [class*="box"] {padding-right:16px; padding-left:16px;}
@@ -457,36 +631,73 @@ a {text-decoration:none;}
 @media(min-width:600px)
 {
     
-.inner_1_area {
+.site_nav　{height:100px;}
+    
+.sn_left {width:100%;}
 
-    width:auto; height:380px;
+.site_title_0 {transform:scale(0.8,0.8);}
+    
+.site_logo {width:40px; height:40px; margin-top:5px;}
+    
+.site_title_0 {
+    
+    height:50%;
+    margin-top:-15px; margin-left:-20px;
+    padding-left:0;
+    position:relative;
     
 }
+
+.sn_center {
+    
+    width:65%;
+    margin-top:5px;
+    font-size:14px;
+    
+}
+
+.sn_right {
+    
+    width:35%;
+    margin-top:-45px;
+    padding-top:8px; padding-bottom:8px;
+    font-size:10px;
+    
+}
+    
+[class*="sn_lang"] {
+    
+    float:left;
+    width:33.333333%; height:100%;
+    text-align:center;
+    
+}
+    
+.inner_1_area {width:auto; height:380px;}
     
 [class*="slide_button"] {display:none;}
    
 .slider_a_list_0 {
     
     width:90%; height:270px;
+    padding-right:5%; padding-left:5%;
     position:relative; overflow:visible;
 
 }
     
-.slider_a_list_1 {width:100%; height:270px;}
+.slider_a_list_1 {width:100%; height:270px; margin-left:0;}
 
-[class*="sla_li"] {
+[class*="sla_li"] {width:50%; height:90px;}
+
+.inner_3_area {margin-top:35px; margin-bottom:45px;}
     
-    width:50%; height:90px;
-    
-}
+[class*="fl0_in_list"] {margin-right:16px; margin-left:16px;}
 
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-.fotter_list_0 {
-    
-    padding-top:16px; padding-bottom:16px;
-    
-}
+[class*="fb_logo_1"] {padding-top:24px;}
+
+.fotter_list_0 {padding-top:16px; padding-bottom:16px;}
     
 .fotter_list_0:after {content:""; display:block; clear:both;}
     
@@ -499,11 +710,39 @@ a {text-decoration:none;}
     
 }
     
+.copyright_box p {text-align:center;}
+
+[class*="news_li"] {margin-top:24px;}
+    
 [class*="news_li"]:after {content:""; display:block; clear:both;}
     
-[class*="nl_date"] {float:left; width:20%; text-align:center; position:relative;}
+[class*="nl_date"] {
     
-[class*="nl_category"] {float:left; width:20%; text-align:center; position:relative;}
+    float:left;
+    width:25%;
+    text-align:center;
+    position:relative;
+
+}
+    
+[class*="nl_category"] {
+    
+    float:left;
+    width:25%;
+    font-size:14px; text-align:center;
+    position:relative;
+    
+}
+    
+[class*="nl_news"] {
+    
+    float:left;
+    width:95%;
+    margin-left:5%;
+    font-size:15px; text-align:left; line-height:32px;
+    position:relative;
+    
+}
 
 [class*="fl0_li_1"],[class*="fl0_li_3"]
 {border-right:solid 1px #cecece;}
@@ -516,17 +755,57 @@ a {text-decoration:none;}
 /*=#=#=#=↓≪ブラウザ画面の横幅が『768px以上』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
 @media(min-width:768px)
 {
+    
+.site_nav　{height:80px;}
+    
+.sn_left {width:43%;}
 
-.inner_1_area {
-
-    width:auto; height:200px;
+.site_title_0 {transform:scale(0.8,0.8);}
+    
+.site_logo {width:60px; height:60px; margin-top:8px; margin-left:-24px;}
+    
+.site_title_0 {
+    
+    height:100%;
+    margin-top:0; margin-left:-18px;
+    padding-left:0;
+    position:relative;
     
 }
+
+.sn_center {
+    
+    width:40%;
+    margin-top:28px; margin-left:-16px;
+    font-size:15px;
+    
+}
+
+.sn_right {
+    
+    width:17%;
+    margin-top:22px; margin-left:0;
+    padding:8px; padding-bottom:8px;
+    font-size:11px;
+    
+}
+    
+[class*="sn_lang"] {
+    
+    float:left;
+    width:33.333333%; height:100%;
+    text-align:center;
+    
+}
+    
+.inner_1_area {width:auto; height:200px;}
+
+.slider_a_list_1 {margin-left:0;}
 
 [class*="slide_button"] {
     
     display:block; float:left;
-    width:10%; height:90px;
+    width:7.5%; height:90px;
     
     font-size:32px; color:#55aaff; text-align:center;
     position:relative;
@@ -535,13 +814,13 @@ a {text-decoration:none;}
     
 .slider_a_list_0 {
     
-    width:80%; height:90px;
-    
+    width:85%; height:90px;
+    padding-right:0; padding-left:0;
     position:relative; overflow:hidden;
 
 }
     
-.slider_a_list_1 {width:1452px; height:90px;}
+.slider_a_list_1 {width:1366px; height:90px;}
     
 [class*="sla_li"] {
     
@@ -549,16 +828,22 @@ a {text-decoration:none;}
     margin-right:16px; margin-left:16px;
 
 }
-
-/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
     
-.fotter_list_0 {
+[class*="news_title"] {
     
-    padding-top:32px; padding-bottom:32px;
+    margin-right:32px; margin-left:32px;
     
 }
     
+.inner_3_area {margin-top:70px; margin-bottom:90px;}
+    
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+    
+.fotter_list_0 {padding-top:32px; padding-bottom:32px;}
+    
 .fotter_list_0:after {content:""; display:block; clear:both;}
+    
+[class*="fl0_in_list"] {margin-right:0; margin-left:0;}
     
 [class*="fl0_li"] {
 
@@ -568,18 +853,63 @@ a {text-decoration:none;}
     
 }
     
+.copyright_box p {text-align:right;}
+
+[class*="news_li"] {margin-top:32px; margin-right:16px; margin-left:16px;}
+    
 [class*="news_li"]:after {content:""; display:block; clear:both;}
     
-[class*="nl_date"] {float:left; width:15%; text-align:center; position:relative;}
+[class*="nl_date"] {
     
-[class*="nl_category"] {float:left; width:10%; text-align:center; position:relative;}
+    float:left;
+    width:15%;
+    text-align:center;
+    position:relative;
     
+}
+    
+[class*="nl_category"] {
+    
+    float:left;
+    width:12%;
+    margin-left:2%;
+    text-align:center;
+    position:relative;
+    
+}
+    
+[class*="nl_news"] {
+    
+    float:left;
+    width:70%;
+    margin-left:1%;
+    text-align:left;
+    position:relative;
+    
+}   
+
 [class*="fl0_li_1"],[class*="fl0_li_2"],[class*="fl0_li_3"],[class*="fl0_li_4"]
 {border-right:solid 1px #cecece;}
-    
+
 /*----全体の横幅を固定----*/
 [class*="box"] {padding-right:64px; padding-left:64px;}
 
+}
+/*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+/*=#=#=#=↓≪ブラウザ画面の横幅が『800px以上』の場合≫=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
+@media(min-width:800px)
+{
+    
+.site_title_0 {transform:scale(1,1);}
+    
+.site_logo {width:80px; height:80px; margin-top:0;}
+    
+.site_title_0 {
+    
+    
+    margin-top:0; margin-left:0;
+    
+}    
 }
 /*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪アニメーション等々≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -588,9 +918,34 @@ a {text-decoration:none;}
 
   0% {margin-top:-20%;}
     
- 50% {margin-top:-10%;}
-    
 100% {margin-top:0%;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes slide_left
+{
+
+  0% {margin-left:-1366px;}
+    
+100% {margin-left:0;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes slide_right
+{
+
+  0% {margin-left:0;}
+    
+100% {margin-left:-1366px;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes opacity_1
+{
+
+  0% {opacity:0;}
+    
+100% {opacity:1;}
 
 }   /*--↑@keyframes--*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/

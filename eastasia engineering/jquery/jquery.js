@@ -5,61 +5,148 @@ $(function(){
     $("body").addClass("hold_x");
     $(".site_nav").addClass("absolute");
     
+    $(".sn_lang_1").addClass("select");
+    
     $("[class*='lang_b']").addClass("hide");
     $("[class*='lang_c']").addClass("hide");
     
     //------------------------------------------------------------------------------------------------------//
-    //---- ----//
+    //--取扱いメーカーロゴのスライドボタン--//
     
+    var bt_count = 0;
     
+    $(".slide_button_left").css({"color":"#555555"});
     
-    //------------------------------------------------------------------------------------------------------//
-    //----メニューバーのリアクション----//
-    
-    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
-    
-    $("[class*='sn_center_2_0'] p").hover(function(){
+    $(".slide_button_left").click(function() {
         
-        $(".snc2_li_1").addClass("on");
-        $(".sn_center_2_list").css({"opacity":"1","z-index":"100"},1000);
+        if(bt_count == 1){
+            
+            $(".slider_a_list_1").animate({"margin-left":"0"});
+            $(".slide_button_left").css({"color":"#555555"});
+            
+            bt_count --;
+            
+        }
         
-    },function(){
+        if(bt_count == 2){
+            
+            $(".slider_a_list_1").animate({"margin-left":"-400px"});
+            $(".slide_button_right").css({"color":"#55aaff"});
+            
+            bt_count --;
+            
+        }
         
-        $(".snc2_li_1").removeClass("on");
-        $(".sn_center_2_list").css({"opacity":"0","z-index":"1"},1000);
+    });
+    
+    $(".slide_button_right").click(function() {
+        
+        if(bt_count == 1){
+            
+            $(".slider_a_list_1").animate({"margin-left":"-800px"});
+            $(".slide_button_right").css({"color":"#555555"});
+            
+            bt_count ++;
+            
+        }
+        
+        if(bt_count == 0){
+            
+            $(".slider_a_list_1").animate({"margin-left":"-400px"});
+            $(".slide_button_left").css({"color":"#55aaff"});
+            
+            bt_count ++;
+            
+        }
+        
+    });
+    
+    $(window).on('load resize', function(){
+        
+        $(".slider_a_list_1").css({"margin-left":"0"});
+        $(".slide_button_left").css({"color":"#555555"});
+        $(".slide_button_right").css({"color":"#55aaff"});
+        
+        bt_count =0;
         
     });
     
     //------------------------------------------------------------------------------------------------------//
+    //----メニューバーのクリックリアクション----//
+    
+    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
+    $(".sn_center_2_list").addClass("hide");
+    
+    var click_point = 0;
+    
+    $("[class*='sn_center_2_button']").click(function() {
+
+        if(click_point == 0) {
+
+            $(".sn_center_2_list").removeClass("hide");
+            $(".snc2_li_1").addClass("on");
+            $(".sn_center_2_list").css({"opacity":"1"},1000);
+            
+            $("[class*='sn_center_2_button']").css({"color":"#77bb55"});
+
+            click_point = 1;
+
+        } else {
+        
+            $(".snc2_li_1").removeClass("on");
+            $(".sn_center_2_list").css({"opacity":"0"},1000);
+            $(".sn_center_2_list").addClass("hide");
+            
+            $("[class*='sn_center_2_button']").css({"color":"#555555"});
+
+            click_point = 0;
+
+        }
+
+    });
+        
+    //------------------------------------------------------------------------------------------------------//
     //----言語切り替え【日本語】----//
     
-    $(".sn_right_1").click(function() {
+    $(".sn_lang_1").click(function() {
         
         $("[class*='lang_a']").removeClass("hide");
         $("[class*='lang_b']").addClass("hide");
         $("[class*='lang_c']").addClass("hide");
+        
+        $(".sn_lang_1").addClass("select");
+        $(".sn_lang_2").removeClass("select");
+        $(".sn_lang_3").removeClass("select");
         
     });
     
     //------------------------------------------------------------------------------------------------------//
     //----言語切り替え【English】----//
     
-    $(".sn_right_2").click(function() {
+    $(".sn_lang_2").click(function() {
         
         $("[class*='lang_a']").addClass("hide");
         $("[class*='lang_b']").removeClass("hide");
         $("[class*='lang_c']").addClass("hide");
         
+        $(".sn_lang_1").removeClass("select");
+        $(".sn_lang_2").addClass("select");
+        $(".sn_lang_3").removeClass("select");
+
     });
     
     //------------------------------------------------------------------------------------------------------//
     //----言語切り替え【中文】----//
     
-    $(".sn_right_3").click(function() {
+    $(".sn_lang_3").click(function() {
         
         $("[class*='lang_a']").addClass("hide");
         $("[class*='lang_b']").addClass("hide");
         $("[class*='lang_c']").removeClass("hide");
+        
+        $(".sn_lang_1").removeClass("select");
+        $(".sn_lang_2").removeClass("select");
+        $(".sn_lang_3").addClass("select");
         
     });
     
