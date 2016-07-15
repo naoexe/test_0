@@ -11,6 +11,69 @@ $(function(){
     $("[class*='lang_c']").addClass("hide");
     
     //------------------------------------------------------------------------------------------------------//
+    //----メニューバーのクリックリアクション----//
+    
+    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
+    $(".sn_center_2_list").addClass("hide");
+    
+    var click_point = 0;
+    
+    $("[class*='sn_center_2_button']").click(function() {
+
+        if(click_point == 0) {
+
+            $(".sn_center_2_list").removeClass("hide");
+            $(".snc2_li_1").addClass("on");
+            $(".sn_center_2_list").css({"opacity":"1"},1000);
+            
+            $("[class*='sn_center_2_button']").css({"color":"#77bb55"});
+
+            click_point = 1;
+
+        } else {
+        
+            $(".snc2_li_1").removeClass("on");
+            $(".sn_center_2_list").css({"opacity":"0"},1000);
+            $(".sn_center_2_list").addClass("hide");
+            
+            $("[class*='sn_center_2_button']").css({"color":"#555555"});
+
+            click_point = 0;
+
+        }
+
+    });
+    
+    //------------------------------------------------------------------------------------------------------//
+    //----ヘッダー画像上のテキストアニメーション----//
+    
+    setTimeout(function(){
+        
+        $(".header_text_1").animate({"opacity":"0"});
+        
+    },4000);
+    
+    setTimeout(function(){
+        
+        $(".header_text_2").animate({"opacity":"0"});
+        
+    },5000);
+    
+    setTimeout(function(){
+        
+        $(".header_text_3").animate({"opacity":"0"});
+        
+    },6000);
+    
+    setTimeout(function(){
+        
+        $(".header_text_1").addClass("hide");
+        $(".header_text_2").addClass("hide");
+        $(".header_text_3").addClass("hide");
+        
+    },7000);
+    
+    //------------------------------------------------------------------------------------------------------//
     //--取扱いメーカーロゴのスライドボタン--//
     
     var bt_count = 0;
@@ -71,40 +134,6 @@ $(function(){
         
     });
     
-    //------------------------------------------------------------------------------------------------------//
-    //----メニューバーのクリックリアクション----//
-    
-    $(".sn_center_2_list").css({"opacity":"0","height":"0"});
-    $(".sn_center_2_list").addClass("hide");
-    
-    var click_point = 0;
-    
-    $("[class*='sn_center_2_button']").click(function() {
-
-        if(click_point == 0) {
-
-            $(".sn_center_2_list").removeClass("hide");
-            $(".snc2_li_1").addClass("on");
-            $(".sn_center_2_list").css({"opacity":"1"},1000);
-            
-            $("[class*='sn_center_2_button']").css({"color":"#77bb55"});
-
-            click_point = 1;
-
-        } else {
-        
-            $(".snc2_li_1").removeClass("on");
-            $(".sn_center_2_list").css({"opacity":"0"},1000);
-            $(".sn_center_2_list").addClass("hide");
-            
-            $("[class*='sn_center_2_button']").css({"color":"#555555"});
-
-            click_point = 0;
-
-        }
-
-    });
-        
     //------------------------------------------------------------------------------------------------------//
     //----言語切り替え【日本語】----//
     

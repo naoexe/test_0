@@ -41,11 +41,7 @@ a {text-decoration:none;}
 /*-----------------------------------------------------------------------------------------------------------*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪サイト背景≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-.back_zone {
-    
-    position:fixed;
-    
-}
+.back_zone {position:fixed;}
 
 /*----背景設定----*/
 
@@ -206,11 +202,8 @@ a {text-decoration:none;}
     
 }
 
-[class*="snc2_menu_1"],[class*="snc2_menu_2"],[class*="snc2_menu_3"] {
-    
-    border-bottom:solid 1px #aaaaaa;
-    
-}
+[class*="snc2_menu_1"],[class*="snc2_menu_2"],[class*="snc2_menu_3"]
+{border-bottom:solid 1px #aaaaaa;}
 
 .snc2_li_1.on li {
     
@@ -261,14 +254,6 @@ a {text-decoration:none;}
     
 }
 
-.header_area p {
-    
-    margin-top:20%; margin-left:45%;
-    font-size:32px; color:#fefefe; text-align:center;
-    position:absolute;
-    
-}
-
 .header_image {
     
     width:100%; max-width:100%; height:0;
@@ -276,6 +261,71 @@ a {text-decoration:none;}
     background-image:url(../images/main_image_1.jpg);
     background-color:#000000;
     background-size:contain;
+    
+}
+
+.header_text_0 {
+    
+    width:100%; height:100%;
+    position:absolute;
+    
+}
+
+.header_text_0:after {content:""; display:block; clear:both;}
+
+.header_text_1, .header_text_2, .header_text_3 {
+    
+    float:left;
+    width:33.333333%;
+    margin-top:15%;
+    font-size:40px; color:#fefefe; text-align:center;
+    position:relative;
+    
+}
+
+.header_text_4 {
+    
+    float:left;
+    width:100%;
+    margin-top:15%;
+    font-size:40px; color:#fefefe; text-align:center;
+    position:relative;
+    
+}
+
+.header_text_1 {
+    
+    animation-name:text_anime_1;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:10s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:1;	/*--←アニメーションの再生回数を指定--*/
+    
+}
+
+.header_text_2 {
+    
+    animation-name:text_anime_2;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:10s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:1;	/*--←アニメーションの再生回数を指定--*/
+    
+}
+
+.header_text_3 {
+    
+    animation-name:text_anime_3;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:10s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:1;	/*--←アニメーションの再生回数を指定--*/
+    
+}
+
+.header_text_4 {
+    
+    animation-name:text_anime_4;	/*--←下部に記述の"@keyframes"のアニメーションの名前を指定--*/
+	animation-timing-function:linear;	/*--←アニメーション間のタイミング・滑らかさ等の管理--*/
+	animation-duration:10s;	/*--←アニメーションの開始から終了までの再生時間を指定--*/
+	animation-iteration-count:1;	/*--←アニメーションの再生回数を指定--*/
     
 }
 
@@ -474,8 +524,8 @@ a {text-decoration:none;}
 
 .fotter_box p {color:#fefefe; letter-spacing:2px;}
 
-[class*="fb_logo_1"] 
-{
+[class*="fb_logo_1"] {
+    
     width:230px;
     border-bottom:solid 1px #ffffff;
     font-size:24px; text-align:center;
@@ -829,11 +879,7 @@ a {text-decoration:none;}
 
 }
     
-[class*="news_title"] {
-    
-    margin-right:32px; margin-left:32px;
-    
-}
+[class*="news_title"] {margin-right:32px; margin-left:32px;}
     
 .inner_3_area {margin-top:70px; margin-bottom:90px;}
     
@@ -904,12 +950,8 @@ a {text-decoration:none;}
     
 .site_logo {width:80px; height:80px; margin-top:0;}
     
-.site_title_0 {
+.site_title_0 {margin-top:0; margin-left:0;}
     
-    
-    margin-top:0; margin-left:0;
-    
-}    
 }
 /*=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-↓≪アニメーション等々≫↓-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
@@ -919,6 +961,66 @@ a {text-decoration:none;}
   0% {margin-top:-20%;}
     
 100% {margin-top:0%;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes text_anime_1
+{
+
+  0% {opacity:0;}
+    
+ 25% {opacity:1;}
+    
+ 50% {opacity:1;}
+    
+ 75% {opacity:1;}
+    
+100% {opacity:1;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes text_anime_2
+{
+
+  0% {opacity:0;}
+    
+ 25% {opacity:0;}
+    
+ 50% {opacity:1;}
+    
+ 75% {opacity:1;}
+    
+100% {opacity:1;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes text_anime_3
+{
+
+  0% {opacity:0;}
+    
+ 25% {opacity:0;}
+    
+ 50% {opacity:0;}
+    
+ 75% {opacity:1;}
+    
+100% {opacity:1;}
+
+}   /*--↑@keyframes--*/
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+@keyframes text_anime_4
+{
+
+  0% {opacity:0;}
+    
+ 25% {opacity:0;}
+    
+ 50% {opacity:0;}
+    
+ 75% {opacity:0;}
+    
+100% {opacity:1;}
 
 }   /*--↑@keyframes--*/
 /*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
