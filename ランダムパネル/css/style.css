@@ -35,8 +35,8 @@ a {text-decoration:none;}
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 95%;
-    height: 450px;
+    width: 80%;
+    height: 500px;
     border: solid 2px;
     
 }
@@ -48,7 +48,7 @@ a {text-decoration:none;}
     left: 0;
     width: 10%;
     height: 10%;
-    background-color:#3366ff;
+    background-color: aqua;
     
 }
 
